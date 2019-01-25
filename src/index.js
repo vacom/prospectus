@@ -1,22 +1,24 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component, Fragment } from "react";
+import { renderToString } from "react-dom/server";
+import PropTypes from "prop-types";
 
-import styles from './styles.css'
+import Form from "./Form";
 
-export default class ExampleComponent extends Component {
+export default class Prospectus extends Component {
   static propTypes = {
-    text: PropTypes.string
+    data: PropTypes.object.isRequired
+  };
+  componentDidMount() {
+    this.props.renderToHTML(this.objectToHTML());
   }
-
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    this.props.renderToHTML(this.objectToHTML());
+  }
+  objectToHTML = () => {
+    return renderToString(<Form data={this.props.data} />);
+  };
   render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
+    const { renderForm, data } = this.props;
+    return <Fragment>{renderForm && <Form data={data} />}</Fragment>;
   }
 }
