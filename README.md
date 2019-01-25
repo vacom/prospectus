@@ -1,6 +1,4 @@
-# Formette
-
-Bring your forms to life, without having a need for any coding or a backend. Just point your form at Formette and we do the rest.
+# Prospectus
 
 ![Vantage-auth](http://i64.tinypic.com/i5b3te.jpg)
 
