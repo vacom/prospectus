@@ -1,7 +1,7 @@
 {
   "name": "prospectus",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.2",
+  "description": "Object to HTML form generator for React Aplications",
   "author": "vacom",
   "license": "MIT",
   "repository": "vacom/prospectus",
