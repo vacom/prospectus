@@ -1,6 +1,6 @@
 # Prospectus
 
-![Vantage-auth](http://i64.tinypic.com/i5b3te.jpg)
+![Prospectus](https://i.imgur.com/n6xDWNy.jpg)
 
 ## Installation
 
